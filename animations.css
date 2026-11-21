@@ -1,0 +1,8 @@
+.button-entrance{animation:popUp 1s both;animation-delay:calc(var(--delay)/10)}
+@keyframes popUp{from{opacity:0;transform:scale3d(.3,.3,.3)}50%{opacity:1}}
+.fadein{animation:fadein 3s both}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+.button-hover,.credit-hover{transition:transform .15s,filter .25s}
+.footer-hover{display:inline-block;transition:transform .3s ease-out}
+.footer-hover:hover{transform:translateY(-6px)}
+@media (prefers-reduced-motion:reduce){.button-entrance,.fadein{animation:none}}
